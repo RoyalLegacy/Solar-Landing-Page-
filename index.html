@@ -1,0 +1,143 @@
+# Final HTML code for solar lead generation landing page with placeholder tracking ID
+
+final_html_code = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get a free solar energy quote and start saving on your energy bills today!">
+    <meta name="keywords" content="solar energy, free solar quote, solar savings, solar installation">
+    <meta name="author" content="Your Company Name">
+    <title>Solar Energy Quote | Save Money with Solar</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: #f4a261;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: #264653;
+            color: white;
+        }
+        .hero h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .hero p {
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #264653;
+            background: #e9c46a;
+            border: none;
+            cursor: pointer;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .section p {
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+        .form-section {
+            background: #e9c46a;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            max-width: 400px;
+            width: 100%;
+        }
+        form input, form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1em;
+        }
+        form button {
+            background: #264653;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background: #264653;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Solar Energy Solutions</h1>
+</header>
+
+<section class="hero">
+    <h1>Save Money with Solar Energy!</h1>
+    <p>Get a free, no-obligation quote and start saving on your energy bills.</p>
+    <button onclick="document.getElementById('quote-form').scrollIntoView();">Get a Free Quote</button>
+</section>
+
+<section class="section">
+    <h2>Why Choose Solar?</h2>
+    <p>Reduce your energy bills by up to 50%</p>
+    <p>Environmentally friendly and sustainable</p>
+    <p>Government incentives available</p>
+</section>
+
+<section class="form-section" id="quote-form">
+    <h2>Request Your Free Quote</h2>
+    <form action="" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <input type="text" name="address" placeholder="Your Address">
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Solar Energy Solutions. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+"""
+
+# Save the final HTML file
+file_path = '/mnt/data/final_solar_lead_generation_page.html'
+with open(file_path, 'w') as file:
+    file.write(final_html_code)
+
+file_path
